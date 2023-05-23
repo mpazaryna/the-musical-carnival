@@ -4,18 +4,13 @@ This module provides functionalities for XYZ.
 Author: Your Name
 """
 import os
-from dotenv import load_dotenv
+
 from flask import Flask, render_template
-
-# Load environment variables from the .env file
-load_dotenv()
-
-# Read the API key from the environment variable
-api_key = os.getenv("API_KEY")
 
 app = Flask(__name__)
 
-@app.route('/')
+
+@app.route("/")
 def hello():
     """
     Render the home page template.
@@ -23,9 +18,10 @@ def hello():
     Returns:
         A rendered HTML template.
     """
-    return render_template('home.html')
+    return render_template("home.html")
 
-@app.route('/about')
+
+@app.route("/about")
 def about():
     """
     Render the about page template.
@@ -33,7 +29,8 @@ def about():
     Returns:
         A rendered HTML template.
     """
-    return render_template('about.html')
+    return render_template("about.html")
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     app.run()
