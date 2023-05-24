@@ -1,0 +1,3 @@
+from create_knowledge_base import construct_base_from_directory
+
+construct_base_from_directory("data")
