@@ -1,4 +1,4 @@
-from question_answering import QuestionAnswering
+from qa import QuestionAnswering
 
 
 class QuestionAnsweringSystem:
